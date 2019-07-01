@@ -4,14 +4,17 @@ import java.util.Scanner;
 
 public class StringRepeat {
     String repeat1 = "";
-
+//repeat the string based on n value
     public static String repeat(int n, String str) {
         int i = 0;
         String repeat1 = "", result = "";
+        //check if the string is empty or not
         if (str == " ") {
             result += "error message";
             return result.trim();
-        } else if (str == null) {
+        }
+        //check if the string is null or not
+        else if (str == null) {
             result += "null";
             return result;
 

@@ -10,10 +10,14 @@ public class DigitsSum {
             int sum = 0;
 
             String string = "";
+           //split the string number based on space
             String[] array = number.split(" ");
+
             int arr[] = new int[array.length];
             try {
+
                 for (int i = 0; i < array.length; i++) {
+                    //parse the String into number
                     arr[i] = Integer.parseInt(array[i]);
 
                 }

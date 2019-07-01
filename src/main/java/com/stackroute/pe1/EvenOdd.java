@@ -3,7 +3,7 @@ package com.stackroute.pe1;
 import java.util.Scanner;
 
 public class EvenOdd {
-
+//check the given number is even or odd
     public static String EvenOddCheck(int num) {
         String result = "";
 

@@ -1,6 +1,7 @@
 package com.stackroute.pe1;
 
 public class Nthiteration {
+    //print 1223334444 series
     public static String Check(int num) {
         String result = "";
         if (num < 0) {

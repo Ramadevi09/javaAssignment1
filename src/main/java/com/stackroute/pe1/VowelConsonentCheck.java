@@ -1,6 +1,7 @@
 package com.stackroute.pe1;
 
 public class VowelConsonentCheck {
+    //in the given String check what are vowels & consonents
     public static String vowelConsonentCheck(String s) {
         String result = "";
         for (int i = 0; i <= s.length() - 1; i++) {

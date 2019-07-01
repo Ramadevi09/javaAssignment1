@@ -11,6 +11,7 @@ public class Palindrom {
         while (num != 0) {
             rem = num % 10;
             rev = rev * 10 + rem;
+            //condition for
             if (rem % 2 == 0)
                 sum = sum + rem;
 

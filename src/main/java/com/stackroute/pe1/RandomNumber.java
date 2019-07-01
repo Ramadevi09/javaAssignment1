@@ -11,12 +11,17 @@ public class RandomNumber {
 
 
         String string="";
+        //check guessed number is lessthan the target number
         if(target > guess){
             string = "Number guessed is less than the original number";
             return string;
-        }else if (target == guess){
+
+
+        }//check guessed number is equal the target number
+        else if (target == guess){
             string = "Number guessed matches original number";
             return string;
+            //check guessed number is graterthan the target number
         }else if(target < guess){
             string = "Number guessed is more than the original number";
             return string;

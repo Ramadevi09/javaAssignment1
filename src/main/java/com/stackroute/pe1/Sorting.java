@@ -15,7 +15,8 @@ public class Sorting {
         int count = 0;
         int sum = 0;
         int sortednumber = 0;
-        while (number > 0) //to get array length and evenSum
+        //to get array length and evenSum
+        while (number > 0)
         {
             int remainder = number%10;
             count++;
