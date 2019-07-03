@@ -10,7 +10,7 @@ public class StringRepeatTest {
     StringRepeat repeat;
     @Before
     public void setUp(){
-        System.out.println("Before");
+
         repeat=new StringRepeat();
 
 
@@ -19,7 +19,7 @@ public class StringRepeatTest {
     }
     @After
     public void tearDown() {
-        System.out.println("After");
+
         repeat = null;
     }
     @Test

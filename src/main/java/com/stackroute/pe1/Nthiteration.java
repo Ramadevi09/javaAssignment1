@@ -6,10 +6,10 @@ public class Nthiteration {
         String result = "";
         if (num < 0) {
             result += "number should be positive";
-            return result;
+            //return result;
         } else if (num == 0) {
             result += "error";
-            return result;
+           // return result;
 
         } else {
 
@@ -20,8 +20,9 @@ public class Nthiteration {
 
 
             }
-            return result;
         }
+            return result;
+
     }
 }
 

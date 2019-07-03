@@ -34,6 +34,11 @@ public class EvenOddTest {
         String result=EvenOdd.EvenOddCheck(10);
         assertEquals("not lies in 20to30",result);
     }
+    @Test
+    public void givenIntegerContainCharacterAndShouldPrintMessage(){
+        String result=EvenOdd.EvenOddCheck(' ');
+        assertEquals("enter number",result);
+    }
 
 
 }

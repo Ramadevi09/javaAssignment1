@@ -10,15 +10,11 @@ public class VowelConsonentCheckTest {
     VowelConsonentCheck vowelConsonentCheck=null;
     @Before
     public  void setUp(){
-        System.out.println("Before");
         vowelConsonentCheck=new VowelConsonentCheck();
-
     }
     @After
     public void tearDown(){
-        System.out.println("After");
         vowelConsonentCheck=null;
-
     }
     @Test
     public void givenStringContainOneCharacterShouldPrintVowel(){

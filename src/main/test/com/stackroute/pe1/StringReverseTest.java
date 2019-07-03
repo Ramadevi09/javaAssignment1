@@ -10,17 +10,11 @@ public class StringReverseTest {
     StringReverse stringReverse;
     @Before
     public void setUp(){
-        System.out.println("Before");
         stringReverse=new StringReverse();
-
-
-
     }
     @After
     public void tearDown(){
-        System.out.println("After");
         stringReverse=null;
-
     }
     @Test
     public void reverseOfAString(){

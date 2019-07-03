@@ -9,12 +9,12 @@ public class StringReverse {
         //check the string is empty or not
         if (s == " ") {
             result +="error message";
-            return result.trim();
+            //return result.trim();
         }
         //check the String is null or not
         else if(s==null){
             result +="null";
-            return result;
+            //return result;
 
 
         }
@@ -26,8 +26,9 @@ public class StringReverse {
             }
             result += reverse;
 
-            return result.trim();
+
         }
+        return result.trim();
     }
 
 }

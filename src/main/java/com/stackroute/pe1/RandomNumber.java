@@ -14,7 +14,7 @@ public class RandomNumber {
         //check guessed number is lessthan the target number
         if(target > guess){
             string = "Number guessed is less than the original number";
-            return string;
+            //return string;
 
 
         }//check guessed number is equal the target number
@@ -24,7 +24,7 @@ public class RandomNumber {
             //check guessed number is graterthan the target number
         }else if(target < guess){
             string = "Number guessed is more than the original number";
-            return string;
+            //return string;
         }
         else{
             string="Error";

@@ -1,19 +1,19 @@
 package com.stackroute.pe1;
 public class Sorting {
-    public class Result {
+
         String sortedNumber;
         String evenSum;
         boolean isSumAboveLimit;
-    }
+    int sum = 0;
 
-    public Result sort(int number)
+    public String sort(int number)
     {
         int tempnumber = number;
         number = Math.abs(number);
-        Result result = new Result();
+        String result = new String();
         int temp = number;
         int count = 0;
-        int sum = 0;
+
         int sortednumber = 0;
         //to get array length and evenSum
         while (number > 0)
@@ -55,12 +55,33 @@ public class Sorting {
             sortednumber = -sortednumber;
         }
 
-        result.sortedNumber = "Sorted number in non-increasing order: " +sortednumber;
-        result.evenSum = "Sum of even numbers: "+ sum;
-        result.isSumAboveLimit = sum>15? true:false;
+       result = "Sorted number in non-increasing order:"+sortednumber;
 
-        return result;
+        //isSumAboveLimit = sum>15? true:false;
+
+        return result.trim();
 
     }
+    public String evenSumCheck(int number){
+        sort(number);
+        int count=0;
+        int sum=0;String result="";
+        while (number > 0)
+        {
+            int remainder = number%10;
+            count++;
+            number = number/10;
+            if(remainder % 2 ==0)
+                sum = sum + remainder;
+        }
+        result = "Sum of even numbers:"+sum;
+        return result;
+    }
+public boolean limitationCheck(int number){
+        evenSumCheck(number);
+        isSumAboveLimit= sum>15? true:false;
+    return isSumAboveLimit;
+}
+
 
 }

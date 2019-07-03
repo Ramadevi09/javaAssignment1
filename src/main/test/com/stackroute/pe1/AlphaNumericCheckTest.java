@@ -6,12 +6,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class AlphaNumaricCheckTest {
-    AlphaNumaricCheck alphaNumaricCheck;
+public class AlphaNumericCheckTest {
+    AlphaNumericCheck alphaNumaricCheck;
     @Before
     public void setUp(){
         System.out.println("Before");
-        alphaNumaricCheck=new AlphaNumaricCheck();
+        alphaNumaricCheck=new AlphaNumericCheck();
 
     }
     @After
@@ -21,22 +21,22 @@ public class AlphaNumaricCheckTest {
     }
     @Test
     public void checkingGivenCharaterIsSmallerCase(){
-        String result=AlphaNumaricCheck.Check('a');
+        String result= AlphaNumericCheck.Check('a');
         assertEquals("character is smallercase",result);
     }
     @Test
     public void checkingGivenCharaterIsUpperCase(){
-        String result=AlphaNumaricCheck.Check('A');
+        String result= AlphaNumericCheck.Check('A');
         assertEquals("character is uppercase",result);
     }
     @Test
     public void checkingGivenCharaterIsSymbol(){
-        String result=AlphaNumaricCheck.Check('@');
+        String result= AlphaNumericCheck.Check('@');
         assertEquals("special symbol",result);
     }
     @Test
     public void checkingGivenCharaterIsNumber(){
-        String result=AlphaNumaricCheck.Check('9');
+        String result= AlphaNumericCheck.Check('9');
         assertEquals("you entered number",result);
     }
 

@@ -11,7 +11,7 @@ public class StringRepeat {
         //check if the string is empty or not
         if (str == " ") {
             result += "error message";
-            return result.trim();
+            //return result.trim();
         }
         //check if the string is null or not
         else if (str == null) {
@@ -29,8 +29,8 @@ public class StringRepeat {
             result += repeat1;
 
 
-            return result.trim();
-        }
 
+        }
+        return result.trim();
     }
 }

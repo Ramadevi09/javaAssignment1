@@ -2,24 +2,25 @@ package com.stackroute.pe1;
 
 import java.util.Scanner;
 
-public class Palindrom {
+public class PalindromeChecker {
     //check whether the number is palindrom or not
-    public static String palindromCheck(int num) {
-        int rem = 0, rev = 0, temp, sum = 0;
+    public static String palindromCheck(int number) {
+        int reminder = 0, reverse = 0, temp, sum = 0;
         String result = "";
-        temp = num;
-        while (num != 0) {
-            rem = num % 10;
-            rev = rev * 10 + rem;
-            //condition for
-            if (rem % 2 == 0)
-                sum = sum + rem;
+        temp = number;
+        while (number != 0) {
+            reminder = number % 10;
+            reverse = reverse * 10 + reminder;
 
-            num = num / 10;
+            if (reminder % 2 == 0) {
+                sum = sum + reminder;
+            }
+
+            number = number / 10;
         }
 
 
-        if (rev == temp) {
+        if (reverse == temp) {
             if (sum > 25) {
                 result += "palindrom and sum of even numbers is graterthan 25";
             } else {
