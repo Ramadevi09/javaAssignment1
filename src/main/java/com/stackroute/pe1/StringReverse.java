@@ -19,11 +19,11 @@ public class StringReverse {
 
         }
         else {
+            StringBuffer buffer=new StringBuffer(s);
+                //reverse = reverse + s.charAt(i);
+                reverse +=buffer.reverse();
 
-            for (int i = s.length() - 1; i >= 0; i--) {
-                reverse = reverse + s.charAt(i);
 
-            }
             result += reverse;
 
 

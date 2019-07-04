@@ -5,7 +5,7 @@ public class Sorting {
         String evenSum;
         boolean isSumAboveLimit;
     int sum = 0;
-
+//sorting number
     public String sort(int number)
     {
         int tempnumber = number;
@@ -62,6 +62,7 @@ public class Sorting {
         return result.trim();
 
     }
+    //check of sortedNumber evensum
     public String evenSumCheck(int number){
         sort(number);
         int count=0;
@@ -77,6 +78,7 @@ public class Sorting {
         result = "Sum of even numbers:"+sum;
         return result;
     }
+    //check sum is graterthan or not
 public boolean limitationCheck(int number){
         evenSumCheck(number);
         isSumAboveLimit= sum>15? true:false;
